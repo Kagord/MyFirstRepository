@@ -49,3 +49,5 @@ public class MainAplication {
         System.out.println("ЖЕВАТЕЛЬНАЯ РЕЗИНКА - " + pie_counter);
     }
 }
+//changes
+//commit 1
