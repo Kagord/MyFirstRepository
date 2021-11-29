@@ -53,6 +53,7 @@ public class MainFrame extends JFrame {
         radioButtons.add(button);   //добавили кнопку в группу
         HBoxFormulaType.add(button);    //добавили кнопку в контейнер
     }
+
     public MainFrame() {
         super("Вычисление формулы");    //заголовок окна
         setSize(WIDTH, HEIGHT); //размеры окна
@@ -101,7 +102,6 @@ public class MainFrame extends JFrame {
         hboxVariables.add(Box.createHorizontalGlue());// Добавить «клей» C2-H5 для максимального удаления от правого края
 
 
-
         JLabel labelForResult = new JLabel("Результат:"); // Создать подпись для поля с результатом
         textFieldResult = new JTextField("0", 10); // Создать текстовое поле для вывода результата, начальное значение - 0
 
@@ -119,9 +119,6 @@ public class MainFrame extends JFrame {
         hboxResult.add(Memory); // Добавить текстовое поле для вывода памяти
         hboxResult.add(Box.createHorizontalStrut(150)); // Добавить «клей» C3-H3 справа
         hboxResult.setBorder(BorderFactory.createLineBorder(Color.BLUE)); // Задать рамку для контейнера
-
-
-
 
 
         JButton buttonCalc = new JButton("Вычислить"); // Создать кнопку «Вычислить»
@@ -198,7 +195,6 @@ public class MainFrame extends JFrame {
         contentBox.add(Box.createVerticalStrut(30));
 
 
-
         contentBox.add(hboxVariables); // Добавить контейнер с переменными
 
         contentBox.add(Box.createVerticalGlue()); // Добавить «клей» V1 сверху
@@ -226,11 +222,11 @@ public class MainFrame extends JFrame {
         getContentPane().add(contentBox, BorderLayout.CENTER); // Установить «вертикальную коробку» в область содержания главного окна
     }
 
-        public static void main(String[] args) {
-            MainFrame frame = new MainFrame();
-            frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setVisible(true);
-        }
+    public static void main(String[] args) {
+        MainFrame frame = new MainFrame();
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setVisible(true);
     }
+}
 
-    //commit 2
+//commit 1
